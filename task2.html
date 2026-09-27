@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2 - Component Library (Flexbox)</title>
+  <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+
+  <div class="library-container">
+    <h1 class="library-title">Component Library</h1>
+
+    <!-- 1. NAVIGATION BAR -->
+    <section class="component-section">
+      <h2>1. Navigation Bar</h2>
+      <nav class="navbar">
+        <div class="logo">MyBrand</div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav-buttons">
+          <button class="btn btn-secondary">Log In</button>
+          <button class="btn btn-primary">Sign Up</button>
+        </div>
+      </nav>
+    </section>
+
+    <!-- 2. CARDS ROW -->
+    <section class="component-section">
+      <h2>2. Cards Row</h2>
+      <div class="cards-row">
+        <div class="card">
+          <h3>Basic Card</h3>
+          <p>Short description of this item.</p>
+          <button class="btn btn-primary card-btn">Learn More</button>
+        </div>
+        <div class="card">
+          <h3>Detailed Card</h3>
+          <p>This card has much more text to show how all cards remain equal in height and buttons stay strictly aligned at the bottom row regardless of content length.</p>
+          <button class="btn btn-primary card-btn">Learn More</button>
+        </div>
+        <div class="card">
+          <h3>Medium Card</h3>
+          <p>Another description with a moderate amount of text inside.</p>
+          <button class="btn btn-primary card-btn">Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PAGINATION BAR -->
+    <section class="component-section">
+      <h2>3. Pagination Bar</h2>
+      <div class="pagination-bar">
+        <div class="pagination-pages">
+          <button class="btn btn-icon">&laquo;</button>
+          <button class="page-num active">1</button>
+          <button class="page-num">2</button>
+          <button class="page-num">3</button>
+          <button class="page-num">4</button>
+          <button class="btn btn-icon">&raquo;</button>
+        </div>
+        <div class="results-count">Showing 1-10 of 120 results</div>
+      </div>
+    </section>
+
+    <!-- 4. COMMENT BLOCK -->
+    <section class="component-section">
+      <h2>4. Comment Block</h2>
+      <div class="comment-block">
+        <div class="avatar">JD</div>
+        <div class="comment-content">
+          <div class="comment-header">
+            <span class="author-name">John Doe</span>
+            <span class="comment-date">2 hours ago</span>
+          </div>
+          <p class="comment-text">
+  Great article! I’ve been struggling with building responsive layouts without media queries for a while, but your examples with CSS Grid and Flexbox made everything crystal clear. The trick with margin-top: auto to align buttons at the bottom of the cards is a game-changer. Definitely saving this for future reference!
+</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PRICING TABLE -->
+    <section class="component-section">
+      <h2>5. Pricing Table</h2>
+      <div class="pricing-table">
+        <div class="plan-card">
+          <h3 class="plan-name">Starter</h3>
+          <div class="plan-price">$9<span>/mo</span></div>
+          <p class="plan-desc">Essential features for individuals and small projects.</p>
+          <button class="btn btn-secondary plan-btn">Choose Plan</button>
+        </div>
+        
+        <div class="plan-card recommended">
+          <span class="badge">Most Popular</span>
+          <h3 class="plan-name">Pro</h3>
+          <div class="plan-price">$29<span>/mo</span></div>
+          <p class="plan-desc">Advanced features, priority support, and team collaboration tools for growing businesses.</p>
+          <button class="btn btn-primary plan-btn">Choose Plan</button>
+        </div>
+
+        <div class="plan-card">
+          <h3 class="plan-name">Enterprise</h3>
+          <div class="plan-price">$79<span>/mo</span></div>
+          <p class="plan-desc">Full access with dedicated infrastructure and 24/7 technical support.</p>
+          <button class="btn btn-secondary plan-btn">Choose Plan</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>

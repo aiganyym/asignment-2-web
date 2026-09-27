@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 3 - Three Layouts, One Markup</title>
+  <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+
+  <!-- Меню переключения режимов для удобной проверки -->
+  <div class="controls">
+    <span>Переключить режим:</span>
+    <button onclick="setLayout('grid-mode')">1. Grid Mode</button>
+    <button onclick="setLayout('list-mode')">2. List Mode</button>
+    <button onclick="setLayout('magazine-mode')">3. Magazine Mode</button>
+  </div>
+
+  <!-- Главный контейнер (класс меняется: grid-mode | list-mode | magazine-mode) -->
+  <main id="layout-container" class="container grid-mode">
+
+    <!-- Card 1 (Lead Item для Magazine Mode) -->
+    <article class="card-item">
+      <div class="card-media">
+        <img src="https://picsum.photos/600/400?random=1" alt="Article image">
+      </div>
+      <div class="card-content">
+        <h2 class="card-title">Breaking News: Major Tech Innovations Unveiled</h2>
+        <p class="card-desc">Comprehensive coverage on the latest technology breakthroughs transforming modern web development and responsive layout architecture.</p>
+        <span class="card-date">2026-09-28</span>
+      </div>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card-item">
+      <div class="card-media">
+        <img src="https://picsum.photos/600/400?random=2" alt="Article image">
+      </div>
+      <div class="card-content">
+        <h2 class="card-title">Mastering CSS Grid Layout</h2>
+        <p class="card-desc">Learn how CSS Grid can create complex, fluid layouts effortlessly.</p>
+        <span class="card-date">2026-09-27</span>
+      </div>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card-item">
+      <div class="card-media">
+        <img src="https://picsum.photos/600/400?random=3" alt="Article image">
+      </div>
+      <div class="card-content">
+        <h2 class="card-title">Flexbox Deep Dive</h2>
+        <p class="card-desc">Short summary about Flexbox alignment techniques.</p>
+        <span class="card-date">2026-09-26</span>
+      </div>
+    </article>
+
+    <!-- Card 4 -->
+    <article class="card-item">
+      <div class="card-media">
+        <img src="https://picsum.photos/600/400?random=4" alt="Article image">
+      </div>
+      <div class="card-content">
+        <h2 class="card-title">Responsive Design Without Media Queries</h2>
+        <p class="card-desc">Using modern functions like minmax(), clamp(), and auto-fit to achieve dynamic layout behavior.</p>
+        <span class="card-date">2026-09-25</span>
+      </div>
+    </article>
+
+    <!-- Card 5 -->
+    <article class="card-item">
+      <div class="card-media">
+        <img src="https://picsum.photos/600/400?random=5" alt="Article image">
+      </div>
+      <div class="card-content">
+        <h2 class="card-title">UI Component Architecture</h2>
+        <p class="card-desc">Building reusable design systems with pure CSS.</p>
+        <span class="card-date">2026-09-24</span>
+      </div>
+    </article>
+
+    <!-- Card 6 -->
+    <article class="card-item">
+      <div class="card-media">
+        <img src="https://picsum.photos/600/400?random=6" alt="Article image">
+      </div>
+      <div class="card-content">
+        <h2 class="card-title">Web Performance Tips</h2>
+        <p class="card-desc">Optimize images and layout rendering for smoother user experience.</p>
+        <span class="card-date">2026-09-23</span>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Простой скрипт для переключения классов кнопками сверху -->
+  <script>
+    function setLayout(mode) {
+      const container = document.getElementById('layout-container');
+      container.className = 'container ' + mode;
+    }
+  </script>
+
+</body>
+</html>
